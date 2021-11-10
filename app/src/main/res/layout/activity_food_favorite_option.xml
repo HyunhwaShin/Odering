@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECEC"
+    tools:context=".ui.foodFavorite.FoodFavoriteOptionActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_favorite_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_favorite_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/app_bar_favorite_option"
+        android:background="@android:color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="15dp"
+        >
+
+        <TextView
+            android:id="@+id/favorite_option_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="매장에서 식사"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_post_arrival_cooking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="도착후 조리"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_below="@+id/favorite_option_text"
+            android:layout_marginTop="10dp"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_when_arrival_eat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="도착하자마자 먹기"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_below="@+id/favorite_option_text"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/radio_post_arrival_cooking"
+            android:layout_marginLeft="50dp"
+            />
+
+        <TextView
+            android:id="@+id/favorite_option_etc_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기타"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/radio_post_arrival_cooking"
+            android:layout_marginTop="20dp"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_take_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="포장"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_below="@+id/favorite_option_etc_text"
+            android:layout_marginTop="10dp"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_drive_throw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="드라이브 쓰루"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_below="@+id/radio_take_out"
+            android:layout_marginTop="10dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/reservation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#BABC9DEA"
+        >
+
+        <TextView
+            android:id="@+id/reservation_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="예약 주문"
+            android:layout_centerInParent="true"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

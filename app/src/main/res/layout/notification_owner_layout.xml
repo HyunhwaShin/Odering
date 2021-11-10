@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:background="@drawable/bottom_solid"
+    >
+
+    <RelativeLayout
+        android:id="@+id/notification_owner_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+
+        >
+
+        <TextView
+            android:id="@+id/notification_owner_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="알림 제목"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/notification_owner_subinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notification_owner_title"
+            android:text="부가정보"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/notification_owner_btn_wrapper"
+        android:layout_width="125dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/notification_owner_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="음식 완료"
+            android:layout_centerInParent="true"
+            android:textSize="14sp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

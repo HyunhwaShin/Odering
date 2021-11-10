@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.menu.fragment.MarketMenuFragment"
+    android:background="@drawable/menubox"
+    >
+
+    <LinearLayout
+        android:id="@+id/fragment_market_menu_title_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:id="@+id/fragment_market_menu_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="니가가라하와이 메뉴"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#BDA581"
+            />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_market_menu_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment_market_menu_title_box"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="25dp"
+        />
+
+
+</RelativeLayout>

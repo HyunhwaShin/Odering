@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6"
+    tools:context=".ui.foodFavorite.FoodFavoriteActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_food_favorite"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_food_favorite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="장바구니"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:layout_centerInParent="true"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전체삭제"
+                android:layout_alignParentRight="true"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                />
+
+
+        </RelativeLayout>
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/food_favorite_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/app_bar_food_favorite"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        >
+
+        <TextView
+            android:id="@+id/food_favorite_title_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="처갓집 양념치킨 안서점"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_food_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/food_favorite_title"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/food_favorite_buy_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#BABC9DEA"
+        >
+
+        <TextView
+            android:id="@+id/food_favorite_buy_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0원 주문하기"
+            android:layout_centerInParent="true"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

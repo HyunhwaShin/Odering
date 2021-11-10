@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECEC"
+    tools:context=".ui.menu.MenuSelectActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_menu_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_menu_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                >
+            </androidx.appcompat.widget.Toolbar>
+
+            <TextView
+                android:id="@+id/toolbar_menu_select_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Me"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                />
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/menu_select_title"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/app_bar_menu_select"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+        android:outlineSpotShadowColor="@color/colorPrimaryDark"
+        >
+
+        <TextView
+            android:id="@+id/menu_select_market_name"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:gravity="center"
+            android:lineHeight="35dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/menu_select_box"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:id="@+id/call"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/call_image"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_home_black_24dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="전화"
+                    android:layout_marginLeft="5dp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/like"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/like_image"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_home_black_24dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="찜"
+                    android:layout_marginLeft="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/like_counter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="11"
+                    android:layout_marginLeft="5dp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/share"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/share_image"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_home_black_24dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="공유"
+                    android:layout_marginLeft="5dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/menu_select_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/windowBackground"
+        android:layout_below="@+id/menu_select_title"
+        >
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager_menu_select"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/menu_select_tab"
+        android:layout_marginTop="10dp"
+
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_favorite_btn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_home_black_24dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        />
+
+</RelativeLayout>

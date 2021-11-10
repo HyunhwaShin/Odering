@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.market.MarketSelectActivity"
+    android:background="#E6E6E6"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_market_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_market_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                >
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <TextView
+                android:id="@+id/toolbar_market_select_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="한식"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_market_select"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar_market_select"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/white"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="135dp"
+    android:paddingTop="20dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp"
+    android:background="@drawable/bottom_solid"
+    >
+
+    <LinearLayout
+        android:id="@+id/menu_info_box"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="110dp"
+        >
+
+        <TextView
+            android:id="@+id/menu_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="육회 비빔밤 + 찌개"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginRight="100dp"
+            />
+
+        <TextView
+            android:id="@+id/menu_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8,500원"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/menu_food_image"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_notifications_black_24dp"
+        android:scaleType="fitCenter"
+        />
+
+</RelativeLayout>

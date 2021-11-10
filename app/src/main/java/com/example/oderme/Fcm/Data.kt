@@ -1,0 +1,68 @@
+package com.example.oderme.Fcm
+
+class Data {
+    private var marketName : String = ""
+    private var icon  = 0
+    private var body : String = ""
+    private var title : String = ""
+    private var sented : String = ""
+    private var isClick : String = "true"
+
+    constructor()
+    constructor(marketName: String, icon: Int, body: String, title: String, sented: String, isClick : String) {
+        this.marketName = marketName
+        this.icon = icon
+        this.body = body
+        this.title = title
+        this.sented = sented
+        this.isClick = isClick
+    }
+
+    fun getUser() :String{
+        return marketName
+    }
+
+    fun setUser(user: String){
+        this.marketName = marketName
+    }
+
+    fun getIcon() :Int{
+        return icon
+    }
+
+    fun setIcon(icon: Int){
+        this.icon = icon
+    }
+
+    fun getTitle() :String{
+        return title
+    }
+
+    fun setTitle(title: String){
+        this.title = title
+    }
+
+    fun getBody() :String{
+        return body
+    }
+
+    fun setBody(body: String){
+        this.body = body
+    }
+
+    fun getSented() :String{
+        return sented
+    }
+
+    fun setSented(sented: String){
+        this.sented = sented
+    }
+
+    fun getIsClick() :String{
+        return isClick
+    }
+
+    fun setIsClick(isClick: String){
+        this.isClick = isClick
+    }
+}

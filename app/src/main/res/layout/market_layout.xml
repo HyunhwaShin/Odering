@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context=".ui.market.MarketSelectActivity"
+    android:background="@drawable/bottom_solid"
+    >
+
+    <RelativeLayout
+        android:id="@+id/market_image_wrapper"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/rounded"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/market_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_home_black_24dp"
+            android:scaleType="fitCenter"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/market_image_wrapper"
+        android:orientation="vertical"
+        android:paddingRight="10dp"
+
+        >
+
+        <TextView
+            android:id="@+id/market_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="꼬기만땅 점보비빔밥 천안안서점"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:id="@+id/market_sub_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="꼬기만땅 점보비빔밥은 최선을 다하며 항상 코로나에 안전한 가게입니다. 사랑합니다. 감사합니다. 자주와주세요. 안녕"
+            android:maxLines="3"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#FFBCBBBB"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/market_image"
+            android:layout_marginLeft="20dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

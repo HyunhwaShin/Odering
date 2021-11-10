@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "988538549348",
+    "firebase_url": "https://orderme-fb113.firebaseio.com",
+    "project_id": "orderme-fb113",
+    "storage_bucket": "orderme-fb113.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:988538549348:android:f92fcf1aeae9f63df51b71",
+        "android_client_info": {
+          "package_name": "com.example.oderme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "988538549348-ln4441489b80fckupjdea8let9jgvhi2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-q3z4i08Lp89jx_X63Q8ijeTXuJ4tLiI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "988538549348-ln4441489b80fckupjdea8let9jgvhi2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
